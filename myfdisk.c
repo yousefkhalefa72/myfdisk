@@ -97,7 +97,7 @@ int main(int argc, char **argv)
             table_entry_ptr = (PartitionEntry *) &buf[446]; 
 			
 			/******* print logical partition entries ********/
-			for (int i = 0; i < 4 ; i++) 
+			for (int i = 0;/* i < 4 */; i++) 
 			{
 				if(table_entry_ptr[i].lba == 0)
 				{
